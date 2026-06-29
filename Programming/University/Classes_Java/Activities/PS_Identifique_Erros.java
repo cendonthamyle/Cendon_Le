@@ -30,32 +30,32 @@ public class PS_Identifique_Erros {
               /* erro semântico: não tem sentido essa comparação pois dentro da estrutura 
                  if deve acontecer uma comparação que retorna um valor booleano. Nesse caso,
                  não está sendo feita uma comparação, mas uma atribuição de valor entre num1 e num2*/ 
-               if(num1 = num2) System.out.println("iguais"); 
+               //if(num1 = num2) System.out.println("iguais"); 
                    System.out.println("A soma de num1 e num2 é: " + s);
      
-               int p = num1 * num2;
-               System.out.println("O produto de num1 e num2 é: " + p) // erro sintático: esqueceu de finalizar com vírgula
+               //int p = num1 * num2;
+               //System.out.println("O produto de num1 e num2 é: " + p) // erro sintático: esqueceu de finalizar com vírgula
                int d = num1 - num2;
                System.out.println("A diferença entre num1 e num2 é: " + d);
-               int q = num1 / num2;
-               System.out.println("O quociente de num1 e num2 é: " q); // erro sintático: faltou o operador de concatenação
+               //int q = num1 / num2;
+               //System.out.println("O quociente de num1 e num2 é: " q); // erro sintático: faltou o operador de concatenação
             }
         }
     
 
     // Código 3:
     public class CallMethod {
-        int var = -1;
-
+        //int var = -1;
+       
         void sumVar(int var){
-            return var++; // erro semântico: método void não retorna valor
+            //return var++; // erro semântico: método void não retorna valor
         }
 
         public static void main(String[] args) {
             // erro semântico: 
             // incompatibilidade do método e do tipo, sendo um estático e o outro não-estático
-            static var = 1000;
-            sumVar(var); 
+            //static var = 1000;
+            //sumVar(var); 
         }
     }
 }
