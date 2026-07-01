@@ -46,34 +46,34 @@ public class Identifiers_Reserved_Words {
         
             // RULE 1: ALLOWED CHARACTER SETS
             // Identifiers can only consist of: [a-z, A-Z], [0-9], '$', and '_'.
-            int total_number = 100; // Valid
-            int total$number = 200; // Valid
+            // int total_number = 100; // Valid
+            // int total$number = 200; // Valid
             // int total#number = 300; // ❌ INVALID: '#' causes a compile-time error.
 
             // RULE 2: DIGITS CANNOT LEAD
             // An identifier can contain numbers, but it cannot begin with a digit.
-            int Total123 = 400; // Valid
+            // int Total123 = 400; // Valid
             // int 123Total = 500; // ❌ INVALID: Leading digit causes a compile-time error.
 
             // RULE 3: CASE SENSITIVITY
             // Identifiers containing identical letters but different sizing are independent memory locations.
-            int number = 10;
-            int Number = 20;
-            int NUMBER = 30; // Valid: Three completely separate variables.
+            // int number = 10;
+            // int Number = 20;
+            // int NUMBER = 30; // Valid: Three completely separate variables.
 
             // RULE 4: NO LENGTH LIMIT
             // Technically there is no restriction, but excessive length degrades readability.
-            int xxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyzzzzzzzzzzzzzz = 1000; // Valid, but poor practice.
+            // int xxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyzzzzzzzzzzzzzz = 1000; // Valid, but poor practice.
 
             // RULE 5: RESERVED WORDS BANNED
             // You cannot hijack language keywords or literals to use as your own naming conventions.
-            int y = 10; // Valid
+            // int y = 10; // Valid
             // int if = 20; // ❌ INVALID: 'if' is a structural keyword.
 
             // RULE 6: PREDEFINED NAMES ARE ALLOWED (BUT DISCOURAGED)
             // Predefined class/interface names are not reserved words, but they confuse programmers.
-            int String = 888;    // Valid, but a highly discouraged programming practice
-            int Runnable = 999;  // Valid, but creates extreme confusion
+            // int String = 888;    // Valid, but a highly discouraged programming practice
+            // int Runnable = 999;  // Valid, but creates extreme confusion
         }
 
     /*
@@ -95,22 +95,24 @@ public class Identifiers_Reserved_Words {
         public static void reservedWordsDemonstration() {
         
             // A. Keywords for Data Types (8)
-            byte b = 1;
-            short s = 2;
-            int i = 3;
-            long l = 4L;
-            float f = 5.0f;
-            double d = 6.0;
-            boolean bool = true;
-            char ch = 'A';
+            /*
+                byte b = 1;
+                short s = 2;
+                int i = 3;
+                long l = 4L;
+                float f = 5.0f;
+                double d = 6.0;
+                boolean bool = true;
+                char ch = 'A';
+            */
 
             // B. Keywords for Flow Control (11)
             // Covered keywords: if, else, switch, case, default, while, do, for, break, continue, return
-            if (bool) {
-                for (int k = 0; k < 1; k++) {
-                    break; 
-                }
-            }
+            //if (bool) {
+            //    for (int k = 0; k < 1; k++) {
+            //        break; 
+            //    }
+            //}
 
             // C. Keywords for Modifiers (11)
             // public, private, protected, static, final, abstract, synchronized, native, strictfp, transient, volatile
@@ -119,6 +121,7 @@ public class Identifiers_Reserved_Words {
             // D. Keywords for Exception Handling (6)
             // try, catch, finally, throw, throws, assert
             // (Note: assert was added in v1.4 for debugging validation).
+            /*
             try {
                 assert (i > 0); 
             } catch (AssertionError e) {
@@ -126,14 +129,14 @@ public class Identifiers_Reserved_Words {
             } finally {
                 // Clean up
             }
-
+            */
             // E. Class-Related Keywords (6)
             // class, interface, extends, implements, package, import
 
             // F. Object-Related Keywords (4)
             // new (allocates memory), instanceof (type check), super, this (pointers)
-            String str = "Hello";
-            boolean check = (str instanceof String);
+            //String str = "Hello";
+            //boolean check = (str instanceof String);
 
             // G. Return Type Keyword (1)
             // void — Used when a method does not return a value.
@@ -152,9 +155,9 @@ public class Identifiers_Reserved_Words {
 
             // J. Reserved Literals (3)
             // These are raw values rather than code functions:
-            boolean tVal = true;   // Value for boolean data type
-            boolean fVal = false;  // Value for boolean data type
-            Object obj = null;     // Default assignment for unallocated object references
+            // boolean tVal = true;   // Value for boolean data type
+            // boolean fVal = false;  // Value for boolean data type
+            // Object obj = null;     // Default assignment for unallocated object references
         }
 
         // Example of Special New Addition (I): Enum
