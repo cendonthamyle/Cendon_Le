@@ -29,8 +29,8 @@ public class Data_Types1 {
         System.out.println("--- 1. Java's Strongly Typed System ---");
         
         // Valid assignments
-        int a = 10;
-        boolean b = true;
+        // int a = 10;
+        // boolean b = true;
 
         /*
            EXAM TRIGGERS (COMPILE-TIME ERRORS):
