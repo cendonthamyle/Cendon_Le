@@ -1,4 +1,4 @@
-package Programming.DailyPractices.June2026;
+package programming.dailypractices.june2026;
 
 import java.util.Scanner; // Required for user input // Exercise 1
 
