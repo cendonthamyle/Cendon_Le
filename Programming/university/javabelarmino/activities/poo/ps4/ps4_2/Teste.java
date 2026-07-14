@@ -11,7 +11,7 @@ public class Teste {
         int opcao;
 
         do {
-            System.out.println("\n===== MENU DE GERENCIAMENTO =====");
+            System.out.println("\n||  MENU DE GERENCIAMENTO.  ||");
             System.out.println("1 - Cadastrar Empregado");
             System.out.println("2 - Aplicar Aumento Salarial");
             System.out.println("3 - Demitir Empregado");
@@ -24,7 +24,7 @@ public class Teste {
                 case 1:
                     System.out.print("Digite o ID do empregado: ");
                     int idCad = sc.nextInt();
-                    sc.nextLine(); // Limpar buffer do teclado
+                    sc.nextLine();
                     System.out.print("Digite o nome: ");
                     String nome = sc.nextLine();
                     System.out.print("Digite o salário bruto: ");
